@@ -1,0 +1,43 @@
+drop table if exists 'user';
+create table user(
+id int(11) not null auto_increment,
+username varchar(50) default null,
+password varchar(50) default null,
+name  varchar(50) default null,
+primary key(id)
+)engine=innodb auto_increment=10 default charset=utf8;
+---------------
+insert into user values(1,'zhangsan','123','张三');
+insert into user values(1,'lisi','123','李四');
+
+
+
+
+=================
+
+ 1. <!--热部署设置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+ 2.setting >>compiler>>auto
+ 3.ctrl+shift+alt >> registry  >>> ,,,,running
+
+快速创建spring 工程 new >spring Initializr
+-----------------------------------------------
+student:
+  - name: tom
+    age: 18
+    addr: nanjng
+     1. #@Value("${name}")
+
+     2.@ConifgurationPropperties(prefix="person")
+
+
+
+
+
+
+
+
+
